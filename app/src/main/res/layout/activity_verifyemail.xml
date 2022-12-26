@@ -97,15 +97,15 @@
         android:id="@+id/resendcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_below="@+id/passwordEt"
         android:layout_alignParentEnd="true"
-        android:text="Resend Code"
-        android:gravity="center"
         android:layout_marginLeft="135dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Resend Code"
+        android:textColor="#002868"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
     <Button
@@ -114,8 +114,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#3F51B5"
         android:background="@drawable/inputbg"
+        android:backgroundTint="#002868"
         android:padding="10dp"
         android:text="Verify"
         android:textAllCaps="false"
