@@ -119,7 +119,7 @@
         android:padding="10dp"
         android:text="Verify"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold">
 
