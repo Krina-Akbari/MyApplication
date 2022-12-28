@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class signup extends AppCompatActivity {
 
     Button signup;
     EditText name,email,cnumber,city,password;
+    TextView signin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class signup extends AppCompatActivity {
         cnumber = findViewById(R.id.cnumber);
         city = findViewById(R.id.city);
         password = findViewById(R.id.password);
+        signin = findViewById(R.id.signin);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,5 +33,13 @@ public class signup extends AppCompatActivity {
                 startActivity(new Intent(signup.this, loginactivity.class));
             }
         });
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(signup.this,loginactivity.class));
+            }
+        });
+
     }
 }

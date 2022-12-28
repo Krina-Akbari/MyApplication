@@ -25,7 +25,7 @@ public class Cnewpassword extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Cnewpassword.this,MainActivity.class ));
+                startActivity(new Intent(Cnewpassword.this,loginactivity.class ));
             }
         });
 

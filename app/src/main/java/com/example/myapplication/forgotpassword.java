@@ -10,6 +10,7 @@ import android.widget.Button;
 public class forgotpassword extends AppCompatActivity {
 
     Button send;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
