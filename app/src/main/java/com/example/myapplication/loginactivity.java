@@ -12,37 +12,37 @@ import android.widget.TextView;
 
 public class loginactivity extends AppCompatActivity {
 
-    Button login;
+    Button signin;
     EditText email,password;
-    TextView forg , sign;
+    TextView forgotpassword , signup;
 
 
-    @SuppressLint("WrongViewCast")
+    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginactivity);
-        login = findViewById(R.id.login);
+        signin = findViewById(R.id.signin);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        forg = findViewById(R.id.forg);
-        sign = findViewById(R.id.sign);
+        forgotpassword = findViewById(R.id.forgotpassword);
+        signup = findViewById(R.id.signup);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(loginactivity.this , MainActivity.class));
             }
         });
 
-        forg.setOnClickListener(new View.OnClickListener() {
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(loginactivity.this , forgotpassword.class));
             }
         });
 
-        sign.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(loginactivity.this , signup.class));
