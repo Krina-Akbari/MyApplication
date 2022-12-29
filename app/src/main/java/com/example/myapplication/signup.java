@@ -44,7 +44,7 @@ public class signup extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            startActivity(new Intent(signup.this, loginactivity.class));
+                            startActivity(new Intent(signup.this, login.class));
                             Toast.makeText(signup.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
 
                         } else {
@@ -60,7 +60,7 @@ public class signup extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(signup.this, loginactivity.class));
+                startActivity(new Intent(signup.this, login.class));
             }
      });
     }
