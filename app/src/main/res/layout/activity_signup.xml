@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -100,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <EditText
         android:id="@+id/city"
@@ -125,7 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cnumber" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -148,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@+id/city" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/btnsignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -160,7 +160,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <TextView
         android:id="@+id/textView2"
@@ -175,7 +175,7 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup" />
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 
     <ImageButton
         android:id="@+id/google"
@@ -209,12 +209,12 @@
         android:text="Already have an account?"
         android:textColor="@color/black"
         android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/signin"
+        app:layout_constraintEnd_toStartOf="@+id/txtsignin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/google" />
 
     <TextView
-        android:id="@+id/signin"
+        android:id="@+id/txtsignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="110dp"

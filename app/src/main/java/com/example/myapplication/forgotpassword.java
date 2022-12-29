@@ -20,7 +20,7 @@ public class forgotpassword extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(forgotpassword.this, verifyemail.class));
+                startActivity(new Intent(forgotpassword.this, Cnewpassword.class));
             }
         });
 

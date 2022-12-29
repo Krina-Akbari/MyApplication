@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219673213875",
+    "project_id": "goodsment-581f4",
+    "storage_bucket": "goodsment-581f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219673213875:android:3c9a06583f6ba1db1869c6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219673213875-aedi2fagkjttm3p67aksn2j3ka4qmge6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ328n-0Q53S7NHFjql3a4DuTXq-mB7zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219673213875-aedi2fagkjttm3p67aksn2j3ka4qmge6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
