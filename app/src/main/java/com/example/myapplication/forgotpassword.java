@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -10,7 +11,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class forgotpassword extends AppCompatActivity {
@@ -31,11 +36,20 @@ public class forgotpassword extends AppCompatActivity {
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
 
         send=findViewById(R.id.btnsend);
-
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(forgotpassword.this, Cnewpassword.class));
+
+                //Authentication
+                mAuth.createUserWithEmailAndPassword(email).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            startActivity(new Intent(forgotpassword.this, Cnewpassword.class));
+                        }
+
+                    }
+                });
             }
         });
 

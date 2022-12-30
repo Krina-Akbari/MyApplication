@@ -178,7 +178,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 
     <ImageButton
-        android:id="@+id/google"
+        android:id="@+id/btngoogle"
         android:layout_width="100dp"
         android:layout_height="75dp"
         android:layout_marginStart="180dp"
