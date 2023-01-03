@@ -128,7 +128,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtForgotpassword" />
 
     <ImageButton
-        android:id="@+id/google"
+        android:id="@+id/btn_google"
         android:layout_width="100dp"
         android:layout_height="75dp"
         android:layout_marginStart="180dp"
@@ -149,7 +149,7 @@
         android:backgroundTint="#0000"
         android:src="@drawable/facebooklogo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/google"
+        app:layout_constraintStart_toEndOf="@+id/btn_google"
         app:layout_constraintTop_toBottomOf="@+id/or" />
 
     <TextView
@@ -162,7 +162,7 @@
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/google" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_google" />
 
     <TextView
         android:id="@+id/txtsignup"

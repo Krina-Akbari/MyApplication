@@ -22,13 +22,15 @@ public class forgotpassword extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     Button send;
+    EditText txtemail;
+    String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgotpassword);
-        mAuth = FirebaseAuth.getInstance();
 
+        mAuth = FirebaseAuth.getInstance();
 
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -36,22 +38,40 @@ public class forgotpassword extends AppCompatActivity {
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
 
         send=findViewById(R.id.btnsend);
+        txtemail = findViewById(R.id.edtforgotpasswordemail);
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                validateData();
+            }
 
-                //Authentication
-                mAuth.createUserWithEmailAndPassword(email).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            startActivity(new Intent(forgotpassword.this, Cnewpassword.class));
-                        }
+            private void validateData() {
+                email = txtemail.getText().toString();
+                if (email.isEmpty()) {
+                    txtemail.setError("Required");
+                }else {
+                    forgetpass();
+                }
+            }
 
-                    }
-                });
+            private void forgetpass() {
+                mAuth.sendPasswordResetEmail(email)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()){
+                                    Toast.makeText(forgotpassword.this,"Check Your E-Mail" ,Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(forgotpassword.this , login.class));
+                                    finish();
+                                }else {
+                                    Toast.makeText(forgotpassword.this, "Error : "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
             }
         });
+
 
     }
 }

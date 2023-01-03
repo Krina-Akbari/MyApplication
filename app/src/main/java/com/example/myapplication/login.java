@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class login extends AppCompatActivity {
 
@@ -26,6 +28,7 @@ public class login extends AppCompatActivity {
     Button btnLogin;
     TextView txtSignup , txtForgotpassword;
     FirebaseAuth mAuth;
+    ImageButton btn_goggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class login extends AppCompatActivity {
         edtPassword = findViewById(R.id.edtPassword);
         txtSignup = findViewById(R.id.txtsignup);
         txtForgotpassword = findViewById(R.id.txtForgotpassword);
+        btn_goggle = findViewById(R.id.btn_google);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
