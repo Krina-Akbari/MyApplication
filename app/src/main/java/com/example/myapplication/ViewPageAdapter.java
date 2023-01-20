@@ -17,7 +17,7 @@ public class ViewPageAdapter extends PagerAdapter {
     int images[]={
             R.drawable.choosedestination,
             R.drawable.fastdelivery,
-            R.drawable.payments
+            R.drawable.payment
     };
 
     int headings[] = {
