@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class forgotpassword extends AppCompatActivity {
@@ -62,7 +61,7 @@ public class forgotpassword extends AppCompatActivity {
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
                                     Toast.makeText(forgotpassword.this,"Check Your E-Mail" ,Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(forgotpassword.this , login.class));
+                                    startActivity(new Intent(forgotpassword.this , signin.class));
                                     finish();
                                 }else {
                                     Toast.makeText(forgotpassword.this, "Error : "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();

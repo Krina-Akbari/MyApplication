@@ -10,7 +10,7 @@
         android:id="@+id/textView1"
         android:layout_width="218dp"
         android:layout_height="74dp"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-10dp"
         android:fontFamily="@font/faster_one"
         android:gravity="center"
         android:text="GoodsMent"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="60dp"
         android:text="Create your Account"
         android:textColor='@color/black'
         android:textSize="20dp"
@@ -163,66 +163,29 @@
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="100dp"
-        android:gravity="center"
-        android:text="- Or sign up with -"
-        android:textColor="#002868"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
-
-    <ImageButton
-        android:id="@+id/btngoogle"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#0000"
-        android:src="@drawable/googlelogo"
-        app:layout_constraintEnd_toStartOf="@+id/facebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ImageButton
-        android:id="@+id/facebook"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="180dp"
-        android:backgroundTint="#0000"
-        android:src="@drawable/facebooklogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btngoogle"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
         android:text="Already have an account?"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toStartOf="@+id/txtsignin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngoogle" />
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 
     <TextView
         android:id="@+id/txtsignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="110dp"
         android:text="signin"
         android:textColor="@color/blue"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
